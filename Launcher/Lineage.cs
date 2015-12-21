@@ -74,7 +74,7 @@ namespace Launcher
                     Kernel32.WriteProcessMemory(_processInfo.HProcess, (IntPtr)0x0046786E, new byte[] { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 }, 6, 0);
 
                     // Load list.spr with lancemaster fix
-                    string zelgoPakPath = Path.Combine(settings.ClientDirectory, (string)"Zelgo.bin");
+                    string zelgoPakPath = Path.Combine(settings.ClientDirectory, (string)"zelgo.pak");
                     if (File.Exists(zelgoPakPath))
                     {
                         byte[] zelgoPak = File.ReadAllBytes(zelgoPakPath);
