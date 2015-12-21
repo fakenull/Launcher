@@ -123,6 +123,7 @@ namespace Launcher
             this.Controls.Add(this.lblUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateForm";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Update Available!";
             this.grpDetails.ResumeLayout(false);
